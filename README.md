@@ -5,5 +5,5 @@ First it generates a random dataset with a random mean. Then we sample 10 values
 Then attempt to use the likelihood function.
 
 ## TO view the notebook
-[Click here](https://nbviewer.org/github/emcarthur123/BayesianPrimer/blob/main/first_posterior_PDF.ipynb)
+[Click here!](https://nbviewer.org/github/emcarthur123/BayesianPrimer/blob/main/first_posterior_PDF.ipynb)
 
