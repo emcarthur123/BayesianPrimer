@@ -10,20 +10,20 @@ Bayesian inference is a statistical method that updates the probability of a hyp
 ### Prior Distribution
 The prior distribution reflects our initial beliefs about the parameter before observing any data. In this notebook, we assume Phil's height follows a normal distribution with a mean (`mean_height`) of 182 cm and a standard deviation (`std_dev`) of 12.7 cm. This is represented mathematically as:
 
-$${\text{prior\_pdf}(x) = \frac{1}{\sigma \sqrt{2 \pi}} \exp\left( -\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right)^2 \right)}$$
-where \(\mu = 182\) and \(\sigma = 12.7\).
+$$\text{prior pdf}(x) = \frac{1}{\sigma \sqrt{2 \pi}} \exp\left( -\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right)^2 \right)$$
+where $$\mu = 182$$ and $$\sigma = 12.7$$.
 
 ### Likelihood Function
 The likelihood function represents the probability of the observed data given a specific value of the parameter (in this case, Phil's height). Given measurements with a known uncertainty (standard deviation of 5 cm), the likelihood for each measurement is calculated as:
 
-$ \text{likelihood}(measurement, \theta) = \frac{1}{\sigma \sqrt{2 \pi}} \exp\left( -\frac{1}{2} \left( \frac{measurement - \theta}{\sigma} \right)^2 \right) $
+$$\text{likelihood}(measurement, \theta) = \frac{1}{\sigma \sqrt{2 \pi}} \exp\left( -\frac{1}{2} \left( \frac{measurement - \theta}{\sigma} \right)^2 \right)$$
 
 where $\sigma = 5$.
 
 ### Posterior Distribution
 The posterior distribution combines the prior distribution and the likelihood of the observed data to provide an updated belief about the parameter. It is calculated as:
 
-$ \text{posterior\_pdf}(\theta) \propto \text{prior\_pdf}(\theta) \times \text{likelihood}(\text{data}, \theta) $
+$$\text{posterior pdf}(\theta) \propto \text{prior pdf}(\theta) \times \text{likelihood}(\text{data}, \theta)$$
 
 The posterior is then normalized so that the area under the curve equals 1.
 
