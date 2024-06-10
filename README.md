@@ -10,8 +10,7 @@ Bayesian inference is a statistical method that updates the probability of a hyp
 ### Prior Distribution
 The prior distribution reflects our initial beliefs about the parameter before observing any data. In this notebook, we assume Phil's height follows a normal distribution with a mean (`mean_height`) of 182 cm and a standard deviation (`std_dev`) of 12.7 cm. This is represented mathematically as:
 
-$ \text{prior\_pdf}(x) = \frac{1}{\sigma \sqrt{2 \pi}} \exp\left( -\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right)^2 \right) $
-
+\[ \text{prior\_pdf}(x) = \frac{1}{\sigma \sqrt{2 \pi}} \exp\left( -\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right)^2 \right) \]
 where \(\mu = 182\) and \(\sigma = 12.7\).
 
 ### Likelihood Function
